@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eventadministrator.eventadministrator.HelloController">
+
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="74.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Event " />
+                <Button layoutX="14.0" layoutY="51.0" mnemonicParsing="false" text="User Management" />
+            </children>
+        </AnchorPane>
+    </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="9.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e6eb" height="90.0" layoutX="14.0" layoutY="147.0" stroke="BLACK" strokeType="INSIDE" width="708.0" />
+            <AnchorPane layoutX="14.0" layoutY="51.0" prefHeight="96.0" prefWidth="708.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e1e6eb" height="90.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" width="708.0" />
+                  <Text layoutX="14.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current in:" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f2f2f2" height="17.0" layoutX="28.0" layoutY="33.0" stroke="#5e4040" strokeType="INSIDE" width="652.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffe500" height="17.0" layoutX="28.0" layoutY="33.0" stroke="#5e4040" strokeType="INSIDE" width="514.0" />
+                  <Text layoutX="650.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="355/500" />
+                  <Text layoutX="25.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total in: 500" />
+                  <Text layoutX="215.0" layoutY="68.05078125" strokeType="OUTSIDE" strokeWidth="0.0" text="Total out: 500" />
+                  <Text layoutX="385.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Opened entries: 1" />
+                  <Text layoutX="569.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Closed entries: 3" />
+               </children>
+            </AnchorPane>
+            <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EVENT STATUS" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#42c339" height="72.0" layoutX="183.0" layoutY="156.0" stroke="BLACK" strokeType="INSIDE" width="376.0" />
+            <Text layoutX="346.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OPENED" wrappingWidth="50.298828125" />
+            <Button layoutX="622.0" layoutY="261.0" mnemonicParsing="false" onAction="#eventSettinghBtnClicked" text="EVENT SETTING" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <MenuBar nodeOrientation="RIGHT_TO_LEFT" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+
+</BorderPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<BorderPane prefHeight="400.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eventadministrator.eventadministrator.HelloController">
+
+    <top>
+        <MenuBar nodeOrientation="RIGHT_TO_LEFT" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top><left>
+        <AnchorPane prefHeight="400.0" prefWidth="74.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Event" />
+                <Button layoutX="14.0" layoutY="51.0" mnemonicParsing="false" text="User Management" />
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="769.0" BorderPane.alignment="CENTER">
+            <children>
+                <VBox prefHeight="48.0" prefWidth="410.0" />
+                <Text layoutX="63.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Management" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" layoutX="62.0" layoutY="64.0" stroke="BLACK" strokeType="INSIDE" width="695.0" />
+                <Button layoutX="291.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="187.0" text="Add user" />
+                <Text layoutX="85.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID/Name:" />
+                <TextField layoutX="171.0" layoutY="75.0" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" layoutX="62.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" width="695.0" />
+                <Text layoutX="85.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User email address:" />
+                <TextField layoutX="191.0" layoutY="136.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="32.0" layoutX="60.0" layoutY="270.0" stroke="BLACK" strokeType="INSIDE" width="695.0" />
+            <Text layoutX="85.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="davideJorge@gmail.com (Door Keeper)" />
+            <Button layoutX="668.0" layoutY="274.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="79.0" text="Delete user" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="32.0" layoutX="60.0" layoutY="299.0" stroke="BLACK" strokeType="INSIDE" width="695.0" />
+            <Text layoutX="85.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="bruno@gmail.com (Customer)" />
+            <Button layoutX="668.0" layoutY="303.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="79.0" text="Delete user" />
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>
