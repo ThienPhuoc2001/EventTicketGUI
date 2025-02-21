@@ -28,7 +28,7 @@ Create the main application class (Main.java) to launch the GUI. (done)
 
 Design the layout for each screen using FXML or hand-coded JavaFX components. (done)
 
-Implement navigation between screens (e.g., button clicks to switch scenes).
+Implement navigation between screens (e.g., button clicks to switch scenes). (done)
 
 Apply CSS styling to enhance the GUI.
 
