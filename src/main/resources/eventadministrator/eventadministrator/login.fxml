@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="266.0" prefWidth="299.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eventadministrator.eventadministrator.HelloController">
+<AnchorPane prefHeight="266.0" prefWidth="299.0" stylesheets="@../../login.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eventadministrator.eventadministrator.HelloController">
    <children>
       <HBox prefHeight="100.0" prefWidth="200.0" />
       <Button ellipsisString="" layoutX="202.0" layoutY="183.0" mnemonicParsing="false" onAction="#loginBtnClicked" text="Login" />
